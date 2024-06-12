@@ -1,21 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jay Pi</title>
-    <link rel="stylesheet" href="./src/css/styles.css">
-</head>
-<body>
-    <header>
-        <h1>Jay Pi's Portfolio</h1>
-    </header>
-    <main>
-        <section id="projects">
-            <h2>Projects</h2>
-            <div id="project-list"></div>
-        </section>
-    </main>
-    <script src="./src/js/scripts.js"></script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/minireset.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat|Quicksand"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="css/animations.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"
+    ></script>
+    <script defer type="text/javascript" src="js/main.js"></script>
+
+    <title>Jay-Pi</title>
+  </head>
+  <body>
+    <div
+      id="wallpaper"
+      class="wallpaper"
+      data-image="images/abstract.jpg"
+    ></div>
+    <div class="content">
+      <aside class="side">
+        <figure id="picture" class="picture">
+          <div class="picture-shadow"></div>
+          <img
+            id="pictureImage"
+            class="picture-image"
+            src="images/vishal.jpg"
+            srcset="
+              images/vishal.jpg  1x,
+              <!-- images/alex@2x.jpg 2x,
+              images/alex@3x.jpg 3x -->
+            "
+            alt="Portrait of Alex Jefferson"
+            width="320"
+            height="320"
+          />
+        </figure>
+      </aside>
+      <main class="about">
+        <h1 class="name">Hi, I'm Jay </h1>
+        <hr class="hr" />
+        <div class="description">
+          <p>
+            I dedicate my time to learning new skills and honing my abilities in web development.
+          </p>
+        </div>
+        <div class="contact">
+          <a class="button" href="mailto:jaberqayad42@gmail.com">
+            Get in touch
+          </a>
+
+          <ul class="social">
+            <li>
+              <a href="https://twitter.com/qayad_jaber">
+                <i class="fab fa-twitter"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/jaberqayad">
+                <i class="fab fa-github"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.linkedin.com/">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </main>
+    </div>
+    <noscript>
+      <style type="text/css">
+        .wallpaper {
+          animation-name: zoomOut;
+        }
+        .picture {
+          animation-name: dropIn;
+        }
+      </style>
+    </noscript>
+  </body>
 </html>
